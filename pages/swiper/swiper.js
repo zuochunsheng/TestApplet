@@ -14,12 +14,26 @@ Page({
 
 	},
 
+
+
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function (options) {
 		this.setData({
 			useData: newsData.initData
+		})
+	},
+
+	goNewsDetail: function (event) {
+		console.log(event)
+	
+		//var newsId = event.target.dataset.newsid;
+		var newsId = event.currentTarget.dataset.newsid;
+		console.log(newsId)
+		wx.navigateTo({
+			//每一个页面都会有自己单独的详情页，通过绑定循环，来获取newsid 
+			url: '../news-detail/news-detail?newsid=' + newsId,
 		})
 	},
 

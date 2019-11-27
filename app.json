@@ -1,6 +1,7 @@
 {
 	"pages": [
 		"pages/swiper/swiper",
+		"pages/news-detail/news-detail",
 		"pages/index/index",
 		"pages/logs/logs"
 	],

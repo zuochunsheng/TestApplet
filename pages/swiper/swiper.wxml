@@ -1,9 +1,16 @@
+<import src="../news-template/news-template.wxml" />
 
-<import src="../news-template/news-template.wxml"/>
+<!-- <meta name="referrer" content="no-referrer" /> -->
 
 
 <view class="news-container">
-  <swiper indicator-dots="{{indiatorDots}}" autoplay="true" interval="2000" circular="true">
+
+
+  <image src="http://www.runoob.com/try/demo_source/paris.jpg" mode="aspectFill">
+  </image>
+
+  <!-- <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image> -->
+  <!-- <swiper indicator-dots="{{indiatorDots}}" autoplay="true" interval="2000" circular="true">
     <swiper-item>
       <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
     </swiper-item>
@@ -13,7 +20,7 @@
     <swiper-item>
       <image src='https://pics6.baidu.com/feed/e7cd7b899e510fb37699ae116bd00790d3430c99.jpeg?token=1149223fe80a2bf67d3d03efe6c1760a&s=221CE0224BF371B319D415DA0100C0B1'></image>
     </swiper-item>
-  </swiper>
+  </swiper> -->
 
 
   <!-- <view class='articlelist'>
@@ -35,7 +42,9 @@
   </view> -->
 
   <block wx:for="{{useData}}" wx:key="key">
-	   <template is="newsTemplate" data="{{...item}}"></template>
-	</block>
+    <view bindtap="goNewsDetail" data-newid="{{item.newsid}}">
+      <template is="newsTemplate" data="{{...item}}"/>
+    </view>
+  </block>
 
 </view>
