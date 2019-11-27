@@ -1,0 +1,13 @@
+<view class="news-container">
+   <swiper indicator-dots="{{indiatorDots}}" autoplay="true" interval="2000" circular="true">
+	   <swiper-item>
+		    <image src="../../images/news.png"></image>
+		 </swiper-item>
+		 <swiper-item>
+		    <image src="../../images/star.png"></image>
+		 </swiper-item>
+		 <swiper-item>
+		    <image src="../../images/user.png"></image>
+		 </swiper-item>
+	 </swiper>
+</view>
