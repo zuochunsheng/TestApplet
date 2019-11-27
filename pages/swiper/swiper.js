@@ -30,10 +30,12 @@ Page({
 	
 		//var newsId = event.target.dataset.newsid;
 		var newsId = event.currentTarget.dataset.newsid;
-		console.log(newsId)
+		var authorName = event.currentTarget.dataset.authorName;
+		console.log("newsId="+newsId)
+		console.log("newsId=" + newsId)
 		wx.navigateTo({
 			//每一个页面都会有自己单独的详情页，通过绑定循环，来获取newsid 
-			url: '../news-detail/news-detail?newsid=' + newsId,
+			url: '../news-detail/news-detail?newsId=' + newsId,
 		})
 	},
 

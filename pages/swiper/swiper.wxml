@@ -5,7 +5,6 @@
 
 <view class="news-container">
 
-
   <image src="http://www.runoob.com/try/demo_source/paris.jpg" mode="aspectFill">
   </image>
 
@@ -42,7 +41,7 @@
   </view> -->
 
   <block wx:for="{{useData}}" wx:key="key">
-    <view bindtap="goNewsDetail" data-newid="{{item.newsid}}">
+    <view bindtap="goNewsDetail" data-newid="{{item.newsid}}" data-author-Name="{{item.authorName}}">
       <template is="newsTemplate" data="{{...item}}"/>
     </view>
   </block>
