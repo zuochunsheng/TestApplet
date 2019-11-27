@@ -2,6 +2,7 @@
 // 引用js 
 var newsData = require("../data/newsdata.js");
 
+
 Page({
 
 	/**
