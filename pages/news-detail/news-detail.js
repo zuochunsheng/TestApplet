@@ -1,6 +1,6 @@
 
 // 引用js 
-var newsData = require("../data/newsdata.js");
+//var newsData = require("../data/newsdata.js");
 
 Page({
 
@@ -15,7 +15,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+		//获取传入的值
     console.log(options);
+		console.log(options.newsId);
   },
 
   /**

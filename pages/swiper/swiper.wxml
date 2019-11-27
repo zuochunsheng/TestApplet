@@ -41,7 +41,7 @@
   </view> -->
 
   <block wx:for="{{useData}}" wx:key="key">
-    <view bindtap="goNewsDetail" data-newid="{{item.newsid}}" data-author-Name="{{item.authorName}}">
+    <view bindtap="goNewsDetail" data-newsid="{{item.newsid}}" data-author-Name="{{item.authorName}}"  id="{{item.newsid}}">
       <template is="newsTemplate" data="{{...item}}"/>
     </view>
   </block>

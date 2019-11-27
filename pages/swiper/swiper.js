@@ -29,10 +29,12 @@ Page({
 		console.log(event)
 	
 		//var newsId = event.target.dataset.newsid;
-		var newsId = event.currentTarget.dataset.newsid;
-		var authorName = event.currentTarget.dataset.authorName;
+		var newsId = event.currentTarget.dataset.newsid;//int 获取不到
+		var authorName = event.currentTarget.dataset.authorName;//string 
+		var id = event.currentTarget.id
 		console.log("newsId="+newsId)
-		console.log("newsId=" + newsId)
+		console.log("authorName=" + authorName)
+		console.log("id=" + id)
 		wx.navigateTo({
 			//每一个页面都会有自己单独的详情页，通过绑定循环，来获取newsid 
 			url: '../news-detail/news-detail?newsId=' + newsId,
