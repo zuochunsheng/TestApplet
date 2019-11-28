@@ -1,0 +1,3 @@
+<!--pages/splash/splash.wxml-->
+<text>pages/splash/splash.wxml</text>
+<text bindtap="goNextPage">跳转</text>

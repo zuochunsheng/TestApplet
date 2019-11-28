@@ -44,5 +44,11 @@ Page({
       url: '../news-detail/news-detail?newsId=' + newsId,
 
     })
-  }
+  },
+	/**
+	 * 用户点击右上角分享
+	 */
+	onShareAppMessage: function () {
+
+	}
 })
