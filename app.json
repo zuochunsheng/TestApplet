@@ -1,6 +1,8 @@
 {
 	"pages": [
-		"pages/swiper/swiper",
+		"pages/swiper/swiper", //首页
+		"pages/tab-bar/tab-bar",
+		"pages/tab-bar2/tab-bar2",
 		"pages/news-detail/news-detail",
 		"pages/index/index",
 		"pages/logs/logs"
@@ -12,5 +14,22 @@
 		"navigationBarTextStyle": "black"
 	},
 	"style": "v2",
-	"sitemapLocation": "sitemap.json"
+	"sitemapLocation": "sitemap.json",
+	"networkTimeout": {
+		"request": 10000,
+		"uploadFile": 10000,
+		"downloadFile": 10000
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/tab-bar/tab-bar",
+				"text": "tar1"
+			},
+			{
+				"pagePath": "pages/tab-bar2/tab-bar2",
+				"text": "tar2"
+			}
+		]
+	}
 }
