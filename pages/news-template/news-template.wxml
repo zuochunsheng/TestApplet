@@ -8,11 +8,23 @@
     <text class='title'>{{title}}</text>
     <image src= "{{articleImg}}" class='article-img'></image>
     <text class='article-text'>{{articleText}}</text>
+
     <!-- <view class='article-like'>
-      <image class='article-like-icon' src='../images/sc.jpg'></image>
+      <image class='article-like-icon' src='../../images/timeg.jpg'></image>
       <text class='article-like-text'>12</text>
-      <image class='article-like-icon' src='../images/fx.jpg'></image>
+      <image class='article-like-icon' src='../../images/star.png'></image>
       <text class='article-like-text'>30</text>
     </view> -->
+		<view class="icon">
+			 <text>12 </text>
+			 <text>10</text>
+		</view>
+		<view class="icon">
+		   <icon class="fa fa-star fa-lg"></icon>
+			 <text>12 </text>
+
+			 <icon class="fa fa-comment fa-lg"></icon>
+			 <text>10</text>
+		</view>
   </view>
 </template>
