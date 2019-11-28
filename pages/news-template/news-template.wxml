@@ -20,7 +20,8 @@
 			 <text>10</text>
 		</view>
 		<view class="icon">
-		   <icon class="fa fa-star fa-lg"></icon>
+		   <icon wx:if="{{collected}}" catchtap="collectTap" class="fa fa-star fa-lg"></icon>
+			 <icon wx:else catchtap="collectTap" class="fa fa-star fa-lg oranage"></icon>
 			 <text>12 </text>
 
 			 <icon class="fa fa-comment fa-lg"></icon>

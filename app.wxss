@@ -9,6 +9,32 @@
   box-sizing: border-box;
 } 
 
+.black{
+	color: #000000
+}
+.gray{
+	color: #808080
+}
+.red{
+	color: #FF0000
+}
+.yellow{
+	color: #FFFF00
+}
+.liaghtSalmon{
+	color: #FFFAFA
+}
+.snow{
+	color: #FFFAFA
+}
+.pink{
+	color: #FFC0CB
+}
+.ghostWhite{
+	color: #F8F8FF
+}
+
+
 
 
 
