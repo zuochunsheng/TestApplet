@@ -9,7 +9,7 @@ Page({
   data: {
 
     newsId: "",
-    newsData: {},
+		userData: {},
     collected: false
   },
 
@@ -25,7 +25,7 @@ Page({
     //this.setData(newsData.initData[options.newsId]);
     this.setData({
       newsId: options.newsId,
-      newsData: newsData.initData[options.newsId]
+      userData: newsData.initData[options.newsId]
     })
 
     // 第一次进入时 判断是否存在本地存储以及是否收藏
@@ -154,6 +154,12 @@ Page({
     //   backgroundAudioManager.src = newsData.initData[_this.data.newsid].music.url // 设置了 src 之后会自动播放
     // }
 
+  },
+  onShareAppMessage() {
+    return {
+			title: this.data.userData.title,
+      path: 'pages/news-detail/news-detail'
+    }
   }
 
 })
