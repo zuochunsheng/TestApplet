@@ -95,7 +95,7 @@ Page({
     });
   },
 
-	showModal: function(event) {
+  showModal: function(event) {
     //  wx.showToast({
     // 	 title: 'wo toast a missitos',
     //  })
@@ -113,17 +113,31 @@ Page({
     })
 
   },
-	showActionSheet(event){
-		wx.showActionSheet({
-			itemList: ['A', 'B', 'C'],
-			success(res) {
-				console.log(res.tapIndex)
-			},
-			fail(res) {
-				console.log(res.errMsg)
-			}
-		})
-	},
+  showActionSheet(event) {
+    wx.showActionSheet({
+      itemList: ['A', 'B', 'C'],
+      success(res) {
+        console.log(res.tapIndex)
+      },
+      fail(res) {
+        console.log(res.errMsg)
+      }
+    })
+  },
+  showLoading(event) {
+    wx.showLoading({
+      title: '加载中',
+    })
+
+    setTimeout(function() {
+      wx.hideLoading()
+    }, 2000)
+
+
+  },
+  hideLoading(event) {
+    wx.hideLoading();
+  },
 
   startPay: function() {
     //_this = this;

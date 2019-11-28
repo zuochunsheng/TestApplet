@@ -9,5 +9,6 @@
   <!-- <icon class="fa fa-comment fa-lg"></icon>
 			 <text>10</text> -->
 </view>
-<text bindtap="showModal">这是一个 showModal</text>
-<text bindtap="showActionSheet">这是一个 showActionSheet</text>
+<text bindtap="showModal">这是一个 showModal\n</text>
+<text bindtap="showActionSheet">这是一个 showActionSheet\n</text>
+<text bindtap="showLoading">这是一个 showLoading\n</text>
