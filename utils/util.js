@@ -1,3 +1,21 @@
+//"GET" ,"POST"
+function SEND(url, method, data, success, fail) {
+	wx.request({
+		url: url,
+		header: {
+			'content-type': 'application/json',
+		},
+		method: method,
+		data: data,
+		success(res) {
+			success(res);
+		},
+		fail(res) {
+			fail(res);
+		}
+	});
+}
+
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -15,5 +33,7 @@ const formatNumber = n => {
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+	SEND = SEND
 }
+//module.exports.SEND = SEND;
