@@ -140,19 +140,33 @@ Page({
   },
 
   startPay: function() {
-    //_this = this;
-    // 1.2版本以后推荐的
-    //const backgroundAudioManager = wx.getBackgroundAudioManager()
+    var _this = this;
 
-    // if (backgroundAudioManager.paused == false) {
-    //   wx.pauseBackgroundAudio();
-    // } else {
-    //   backgroundAudioManager.title = newsData.initData[_this.data.newsId].title
-    // 	backgroundAudioManager.epname = newsData.initData[_this.data.newsId].articleText
-    //   backgroundAudioManager.singer = '林俊杰'
-    //   backgroundAudioManager.coverImgUrl = 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000'
-    //   backgroundAudioManager.src = newsData.initData[_this.data.newsid].music.url // 设置了 src 之后会自动播放
-    // }
+		// 1.2版本以后便不在维护
+    // 判断status
+    // wx.getBackgroundAudioManager({
+    //   success:function(res){
+    //     var status =res.status;
+    //     if(status!=1){
+    //       // 没有在播放
+
+    //     }else{
+    //       wx.pauseBackgroundAudio();
+    //     }
+    //   }
+    // });
+    // 1.2版本以后推荐的
+    const backgroundAudioManager = wx.getBackgroundAudioManager()
+
+    if (backgroundAudioManager.paused == false) {
+      wx.pauseBackgroundAudio();
+    } else {
+      backgroundAudioManager.title = newsData.initData[_this.data.newsId].title
+    	backgroundAudioManager.epname = newsData.initData[_this.data.newsId].articleText
+      backgroundAudioManager.singer = '林俊杰'
+      backgroundAudioManager.coverImgUrl = 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000'
+      backgroundAudioManager.src = newsData.initData[_this.data.newsid].url // 设置了 src 之后会自动播放
+    }
 
   },
   onShareAppMessage() {
