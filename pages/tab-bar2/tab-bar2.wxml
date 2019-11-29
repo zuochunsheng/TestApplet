@@ -41,4 +41,7 @@
   <view>3/10</view>
 </progress>
 
- 
+<text>倒计时 ： {{countDownNum}}</text>
+<button bindtap="start" type="primary">开始 倒计时</button>
+
+<button style="margin-top:10px;" bindtap="clearInterval"  type="primary">取消 倒计时</button>

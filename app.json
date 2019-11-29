@@ -7,7 +7,8 @@
 		"pages/tab-bar/tab-bar",
 		"pages/tab-bar2/tab-bar2",
 		"pages/news-detail/news-detail",
-		"pages/logs/logs"
+		"pages/logs/logs",
+		"pages/download/download"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

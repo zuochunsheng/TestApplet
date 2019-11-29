@@ -8,6 +8,9 @@
   <image bindtap="goTabBar" src="http://www.runoob.com/try/demo_source/paris.jpg" mode="aspectFill">
   </image>
 
+	<button type="primary" bindtap="goNextpageUploadImage">下个页面下载图片button</button>
+	<navigator url='../download/download?id=123&titlename=liming'>下个页面下载图片navigator</navigator>
+
   <!-- <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image> -->
   <!-- <swiper indicator-dots="{{indiatorDots}}" autoplay="true" interval="2000" circular="true">
     <swiper-item>

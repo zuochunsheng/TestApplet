@@ -1,0 +1,7 @@
+<view class="news-container">
+  <image  src="{{imgurl}}" bindtap="imgYu" data-src = '{{imgurl}}' mode="aspectFill">
+  </image>
+
+<button type="primary" bindtap="downloadImage" data-src='{{imgurl}}'>下载图片{{progress}}</button>
+
+</view>

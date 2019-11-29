@@ -22,6 +22,11 @@ Page({
       useData: newsData.initData
     })
   },
+  goNextpageUploadImage() {
+    wx.navigateTo({
+      url: '../download/download'
+    })
+  },
   // 无tabBar 跳有tabBar
   goTabBar(event) {
     console.log(event);
@@ -45,10 +50,5 @@ Page({
 
     })
   },
-	/**
-	 * 用户点击右上角分享
-	 */
-	onShareAppMessage: function () {
-
-	}
+ 
 })
