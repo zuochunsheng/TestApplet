@@ -1,4 +1,8 @@
 //app.js
+
+var util = require("utils/util.js")
+var api = require("utils/api.js")
+
 App({
   onLaunch: function() {
     // 展示本地存储能力
@@ -60,7 +64,9 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+		api:api,
+		util:util
   }
 
 })
