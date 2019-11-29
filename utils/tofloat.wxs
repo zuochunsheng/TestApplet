@@ -1,0 +1,16 @@
+var filter = {
+  //项目中用的是取小数点2位以及5位
+  numberToFix: function(value) {
+    return parseFloat(value).toFixed(2)
+  },
+
+  numberToFix5: function(value) {
+    return parseFloat(value).toFixed(5)
+  }
+
+
+}
+module.exports = {
+	numberToFix: filter.numberToFix,
+	numberToFix5: filter.numberToFix5
+}

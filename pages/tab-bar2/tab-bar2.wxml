@@ -1,4 +1,13 @@
 <!--pages/tab-bar2/tab-bar2.wxml-->
-<text> tab-bar2 页面</text>
+<!-- var tofloat = require("../../utils/tofloat.wxs") -->
 
-<text> {{value}}</text>
+<!-- <import src="../../utils/tofloat.wxs" /> -->
+
+<wxs module="ml">
+  var msg = "hello world";
+	module.exports.message = msg;
+</wxs>
+<text> tab-bar2 页面\n</text>
+
+<text> {{value}}\n</text>
+<text> {{ml.message}}\n</text>
