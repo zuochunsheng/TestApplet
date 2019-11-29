@@ -33,6 +33,12 @@
 <!-- 选择日期 -->
 <picker mode="date" value="{{date}}" start="2018-10-01" end="" bindchange="bindDateChange">
   <view class="date" name="date">
-    <input name="addtime" value="{{date}}" style='padding-left:6%;' disabled="true"  placeholder="选择日期"></input>
+    <input name="addtime" value="{{date}}" style='padding-left:6%;' disabled="true" placeholder="选择日期"></input>
   </view>
 </picker>
+
+<progress percent="3" stroke-width="10" activeColor="#36a4de">
+  <view>3/10</view>
+</progress>
+
+ 
