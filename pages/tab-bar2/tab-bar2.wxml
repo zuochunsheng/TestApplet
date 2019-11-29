@@ -1,2 +1,4 @@
 <!--pages/tab-bar2/tab-bar2.wxml-->
 <text> tab-bar2 页面</text>
+
+<text> {{value}}</text>
