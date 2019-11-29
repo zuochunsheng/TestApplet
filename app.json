@@ -2,11 +2,11 @@
 	"pages": [
 		"pages/splash/splash",
 		"pages/guide/guide",
+		"pages/index/index",
 		"pages/swiper/swiper",
 		"pages/tab-bar/tab-bar",
 		"pages/tab-bar2/tab-bar2",
 		"pages/news-detail/news-detail",
-		"pages/index/index",
 		"pages/logs/logs"
 	],
 	"window": {

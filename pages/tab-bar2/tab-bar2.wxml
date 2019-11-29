@@ -18,6 +18,7 @@
   module.exports.getMax = getMax;
 </wxs>
 
+//外部引用
 <wxs module="tofloat" src="../../utils/tofloat.wxs">
 </wxs>
 

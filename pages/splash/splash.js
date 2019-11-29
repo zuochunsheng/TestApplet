@@ -39,7 +39,8 @@ Page({
       // })
 
 			wx.reLaunch({
-			 	url: '../swiper/swiper'
+			 	//url: '../swiper/swiper'
+				 url: '../index/index'
 			 })
 			
 			// wx.redirectTo({//目标页面不包含 返回键
