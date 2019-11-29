@@ -12,5 +12,6 @@ var filter = {
 }
 module.exports = {
 	numberToFix: filter.numberToFix,
-	numberToFix5: filter.numberToFix5
+	numberToFix5: filter.numberToFix5,
+	message : "addloat"
 }

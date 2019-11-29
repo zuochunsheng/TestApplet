@@ -1,13 +1,31 @@
-<!--pages/tab-bar2/tab-bar2.wxml-->
-<!-- var tofloat = require("../../utils/tofloat.wxs") -->
-
-<!-- <import src="../../utils/tofloat.wxs" /> -->
 
 <wxs module="ml">
   var msg = "hello world";
-	module.exports.message = msg;
+  module.exports.message = msg;
 </wxs>
+
+<wxs module="m2">
+  var getMax = function(array) {
+    var max = undefined;
+    for (var i = 0; i < array.length; ++i) {
+      max = max === undefined ?
+        array[i] :
+        (max >= array[i] ? max : array[i]);
+    }
+    return max;
+  }
+
+  module.exports.getMax = getMax;
+</wxs>
+
+<wxs module="tofloat" src="../../utils/tofloat.wxs">
+</wxs>
+
 <text> tab-bar2 页面\n</text>
 
 <text> {{value}}\n</text>
 <text> {{ml.message}}\n</text>
+<view> {{m2.getMax(array)}} \n\n</view>
+
+<text> {{tofloat.numberToFix(munub)}}\n</text>
+<text> {{tofloat.message}}\n</text>
