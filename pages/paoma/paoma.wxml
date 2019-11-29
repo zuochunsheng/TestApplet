@@ -3,3 +3,7 @@
     {{text}}
   </view>
 </view>
+
+<view class='shipping-phone' bindtap='callGetPhone' data-getPhone='{{callGetPhone}}'>收货电话：
+  <text>{{callGetPhone}}</text>
+</view>

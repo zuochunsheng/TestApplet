@@ -13,7 +13,9 @@ Page({
 		marquee2_margin: 60,
 		size: 14,
 		orientation: 'left', //滚动方向
-		interval: 20 // 时间间隔
+		interval: 20, // 时间间隔
+
+		callGetPhone: '13761654037'
 	},
 	onShow: function () {
 		// 页面显示
@@ -42,5 +44,28 @@ Page({
 				_this.run();
 			}
 		}, _this.data.interval);
+	},
+
+	// 拨打电话给收件人
+	callGetPhone(e) {
+		// 号码
+		let telPhone = e.currentTarget.dataset.getphone;
+		this.callPhone(telPhone);
+	},
+
+  /**
+   * 拨打电话 - 可简单封装工具集
+   */
+	callPhone(phoneNumber) {
+		wx.makePhoneCall({
+			phoneNumber: phoneNumber,
+			success: function () {
+				console.log("拨打电话成功！")
+			},
+			fail: function () {
+				console.log("拨打电话失败！")
+			}
+		})
 	}
+
 })
