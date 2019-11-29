@@ -34,6 +34,6 @@ const formatNumber = n => {
 
 module.exports = {
   formatTime: formatTime,
-	SEND = SEND
+	SEND : SEND
 }
 //module.exports.SEND = SEND;
