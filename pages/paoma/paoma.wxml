@@ -1,0 +1,5 @@
+<view class='loop-text'>
+  <view class="marquee_text" style="{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;">
+    {{text}}
+  </view>
+</view>

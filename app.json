@@ -8,7 +8,8 @@
 		"pages/tab-bar2/tab-bar2",
 		"pages/news-detail/news-detail",
 		"pages/logs/logs",
-		"pages/download/download"
+		"pages/download/download",
+		"pages/paoma/paoma"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

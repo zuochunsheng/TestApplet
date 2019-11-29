@@ -24,7 +24,7 @@ Page({
   },
   goNextpageUploadImage() {
     wx.navigateTo({
-      url: '../download/download'
+      url: '../paoma/paoma'
     })
   },
   // 无tabBar 跳有tabBar
