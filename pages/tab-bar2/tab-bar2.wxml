@@ -1,4 +1,3 @@
-
 <wxs module="ml">
   var msg = "hello world";
   module.exports.message = msg;
@@ -30,3 +29,10 @@
 
 <text> {{tofloat.numberToFix(munub)}}\n</text>
 <text> {{tofloat.message}}\n</text>
+
+<!-- 选择日期 -->
+<picker mode="date" value="{{date}}" start="2018-10-01" end="" bindchange="bindDateChange">
+  <view class="date" name="date">
+    <input name="addtime" value="{{date}}" style='padding-left:6%;' disabled="true"  placeholder="选择日期"></input>
+  </view>
+</picker>

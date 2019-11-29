@@ -7,7 +7,8 @@ P("tab-bar2", {
   data: {
     value: 'abc',
     munub: 123.2346,
-    array: [1, 2, 3, 4, 5, 1, 2, 3, 4]
+    array: [1, 2, 3, 4, 5, 1, 2, 3, 4],
+		date:''
   },
   onLoad: function(event) {
     console.log("bar-bars onLoad")
@@ -16,6 +17,15 @@ P("tab-bar2", {
 
   onPreload: function(event) {
     this.$preLoad("../index/index")
-  }
+  },
+	bindDateChange(e){
+     this.setData({
+			 date : e.detail.value
+		 })
+		console.log(this.data.date)
+		//2019-08-29
+	}
+
+
 
 })
