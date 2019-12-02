@@ -9,7 +9,8 @@
 		"pages/news-detail/news-detail",
 		"pages/logs/logs",
 		"pages/download/download",
-		"pages/paoma/paoma"
+		"pages/paoma/paoma",
+		"pages/lazypic/lazypic"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

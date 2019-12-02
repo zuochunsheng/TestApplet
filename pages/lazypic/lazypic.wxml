@@ -1,0 +1,4 @@
+<view class='item-{{index}}' wx:for="{{lazyData}}" wx:key="*this.src">
+  <image src='{{item.show? item.src : loadIcon}}' class='{{item.show? "active" : ""}}'></image>
+  <view>a-{{index}}</view>
+</view>

@@ -7,3 +7,5 @@
 <view class='shipping-phone' bindtap='callGetPhone' data-getPhone='{{callGetPhone}}'>收货电话：
   <text>{{callGetPhone}}</text>
 </view>
+
+<navigator url="../lazypic/lazypic">跳转 懒加载图片</navigator>
