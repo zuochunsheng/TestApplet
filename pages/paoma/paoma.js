@@ -16,6 +16,8 @@ Page({
 		interval: 20, // 时间间隔
 
 		callGetPhone: '13761654037',
+
+
 		banners: [
 			{ "picUrl": "https://gtd.alicdn.com/sns_logo/i1/TB124_3NXXXXXasXVXXSutbFXXX.jpg_240x240xz.jpg" }, { "picUrl": "https://gtd.alicdn.com/sns_logo/i7/TB1IWtgQFXXXXcmXFXXSutbFXXX.jpg_240x240xz.jpg" }, { "picUrl": "https://gtd.alicdn.com/sns_logo/i1/TB1DX3hIpXXXXXIaXXXSutbFXXX.jpg_240x240xz.jpg" }
 		],
@@ -31,7 +33,12 @@ Page({
 			initEndTime: "2019-12-01 12:32:44",//picker初始结束时间，默认当前时间
 			limitStartTime: "2015-05-06 12:32:44",//最小可选时间
 			limitEndTime: "2055-05-06 12:32:44"//最大可选时间 
-		}
+		},
+
+	
+		reportMobile:"14323234545",//手机号
+		reportMobileCode: ""//验证码
+
 	},
 	onShow: function () {
 		// 页面显示
@@ -83,6 +90,8 @@ Page({
 			}
 		})
 	},
+
+
 	pickerShow: function () {
 		this.setData({
 			isPickerShow: true,
@@ -118,6 +127,29 @@ Page({
 			startTime: data.startTime,
 			endTime: data.endTime
 		});
+	}	,
+
+	showPop(e){
+		console.log("showPop")
+	
+		this.popup = this.selectComponent('#popup');
+		this.popup.showPopup();
+	
+	},
+	_no() {
+		this.popup.hidePopup();
+
+	},
+	_yes(e) {
+		console.log(e)
+		var code = e.detail.code; //短信验证码
+		this.data.reportMobile = code;
+		this.popup.hidePopup();
+
+	},
+	_bindGetCode() {
+		console.log("_bindGetCode");
+
 	}
 
 })

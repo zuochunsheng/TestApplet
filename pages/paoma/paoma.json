@@ -1,6 +1,7 @@
 {
   "usingComponents": {
 			"swiperBanner": "../../components/swiper_banner/index",
-			"time-picker": "../../components/timePicker/timePicker"
+			"time-picker": "../../components/timePicker/timePicker",
+				"popup": "../../components/popup/index"
 	}
 }

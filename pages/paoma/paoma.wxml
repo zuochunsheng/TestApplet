@@ -10,10 +10,10 @@
 
 <navigator url="../lazypic/lazypic">跳转 懒加载图片</navigator>
 
-	<swiperBanner Height="450rpx" imgList="{{banners}}" url="picUrl"></swiperBanner>
+<swiperBanner Height="450rpx" imgList="{{banners}}" url="picUrl"></swiperBanner>
 
 
-	<view>
+<view>
   <button bindtap="pickerShow" style="width:80vw;margin-top:20px">显示picker</button>
 </view>
 
@@ -27,5 +27,9 @@
 </view>
 
 
-<time-picker pickerShow="{{isPickerShow}}" id="picker" wx:if="{{isPickerRender}}" bind:hidePicker="pickerHide" bind:setPickerTime="setPickerTime"
-  config="{{pickerConfig}}"></time-picker>
+<time-picker pickerShow="{{isPickerShow}}" id="picker" wx:if="{{isPickerRender}}" bind:hidePicker="pickerHide" bind:setPickerTime="setPickerTime" config="{{pickerConfig}}"></time-picker>
+
+<view bindtap="showPop" style="margin-top:5rpx;">展示弹框 </view>
+
+<popup id='popup'  content='您在医院检查预留的手机号为{{reportMobile}}，若手机号已变更，请前往医院修改。' bind:error="_no" bind:success="_yes" bind:sendcode="_bindGetCode">
+</popup>

@@ -1,0 +1,35 @@
+<view class="wx-popup" hidden="{{flag}}">
+  <form name="frm" bindsubmit="_success" bindreset="formReset">
+
+    <view class='popup-container'>
+      <view class="wx-popup-title">提示</view>
+      <view class="wx-popup-con">{{content}}</view>
+
+
+      <view class='class-phone' style="margin-bottom: 30rpx;">
+        <!-- 验证码输入框 -->
+        <input placeholder-class="phcolor" class='class-input-code' bindinput="" name="code" placeholder="验证码" maxlength="6" type="number"></input>
+        <!-- 发送验证码按钮 -->
+        <button class="class-send-code" disabled='{{disabled}}' bindtap="_bindGetCode">
+          {{time}}
+        </button>
+      </view>
+
+
+      <view class="wx-popup-btn">
+        <view style="flex:1">
+          <button formType="submit"
+          style='border:2rpx solid #42a2eb;color:#42a2eb;background: white;height: 65rpx;line-height: 65rpx;width: 150rpx;font-size: 30rpx;'>确定</button>
+        </view>
+        <view style="flex:1">
+          <button bindtap='_error' 
+          style='border:2rpx solid #42a2eb;color:#42a2eb;background: white;height: 65rpx;line-height: 65rpx;width: 150rpx;font-size: 30rpx;'>取消</button>
+
+        </view>
+
+
+      </view>
+    </view>
+  </form>
+
+</view>
