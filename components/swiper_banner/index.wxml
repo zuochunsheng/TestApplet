@@ -1,0 +1,9 @@
+<view class='swiper'>
+  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" style="height:{{Height}};">
+    <block wx:for="{{imgList}}" wx:key="prototype">
+      <swiper-item>
+        <image src="{{item[url]}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

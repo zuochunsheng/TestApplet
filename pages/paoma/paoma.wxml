@@ -9,3 +9,5 @@
 </view>
 
 <navigator url="../lazypic/lazypic">跳转 懒加载图片</navigator>
+
+	<swiperBanner Height="450rpx" imgList="{{banners}}" url="picUrl"></swiperBanner>

@@ -15,7 +15,10 @@ Page({
 		orientation: 'left', //滚动方向
 		interval: 20, // 时间间隔
 
-		callGetPhone: '13761654037'
+		callGetPhone: '13761654037',
+		banners: [
+			{ "picUrl": "https://gtd.alicdn.com/sns_logo/i1/TB124_3NXXXXXasXVXXSutbFXXX.jpg_240x240xz.jpg" }, { "picUrl": "https://gtd.alicdn.com/sns_logo/i7/TB1IWtgQFXXXXcmXFXXSutbFXXX.jpg_240x240xz.jpg" }, { "picUrl": "https://gtd.alicdn.com/sns_logo/i1/TB1DX3hIpXXXXXIaXXXSutbFXXX.jpg_240x240xz.jpg" }
+		]
 	},
 	onShow: function () {
 		// 页面显示
