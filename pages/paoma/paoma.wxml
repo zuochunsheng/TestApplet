@@ -11,3 +11,21 @@
 <navigator url="../lazypic/lazypic">跳转 懒加载图片</navigator>
 
 	<swiperBanner Height="450rpx" imgList="{{banners}}" url="picUrl"></swiperBanner>
+
+
+	<view>
+  <button bindtap="pickerShow" style="width:80vw;margin-top:20px">显示picker</button>
+</view>
+
+<view style="text-align:center;margin-top:20px">
+  <view wx:if="{{startTime}}">
+    开始时间：{{startTime}}
+  </view>
+  <view wx:if="{{endTime}}">
+    结束时间：{{endTime}}
+  </view>
+</view>
+
+
+<time-picker pickerShow="{{isPickerShow}}" id="picker" wx:if="{{isPickerRender}}" bind:hidePicker="pickerHide" bind:setPickerTime="setPickerTime"
+  config="{{pickerConfig}}"></time-picker>

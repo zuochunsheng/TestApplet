@@ -14,3 +14,9 @@
   position: absolute;
   top: 12rpx;
 }
+
+
+.intro {
+  margin: 30px;
+  text-align: center;
+}
