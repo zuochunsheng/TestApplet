@@ -1,40 +1,41 @@
 {
-	"pages": [
-		"pages/splash/splash",
-		"pages/guide/guide",
-		"pages/index/index",
-		"pages/swiper/swiper",
-		"pages/tab-bar/tab-bar",
-		"pages/tab-bar2/tab-bar2",
-		"pages/news-detail/news-detail",
-		"pages/logs/logs",
-		"pages/download/download",
-		"pages/paoma/paoma",
-		"pages/lazypic/lazypic"
-	],
-	"window": {
-		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#fff",
-		"navigationBarTitleText": "WeChat",
-		"navigationBarTextStyle": "black"
-	},
-	"style": "v2",
-	"sitemapLocation": "sitemap.json",
-	"networkTimeout": {
-		"request": 10000,
-		"uploadFile": 10000,
-		"downloadFile": 10000
-	},
-	"tabBar": {
-		"list": [
-			{
-				"pagePath": "pages/tab-bar/tab-bar",
-				"text": "tar1"
-			},
-			{
-				"pagePath": "pages/tab-bar2/tab-bar2",
-				"text": "tar2"
-			}
-		]
-	}
+  "pages": [
+    "pages/splash/splash",
+    "pages/guide/guide",
+    "pages/index/index",
+    "pages/swiper/swiper",
+    "pages/tab-bar/tab-bar",
+    "pages/tab-bar2/tab-bar2",
+    "pages/news-detail/news-detail",
+    "pages/logs/logs",
+    "pages/download/download",
+    "pages/paoma/paoma",
+    "pages/lazypic/lazypic",
+    "pages/zanui-test/zanui-test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/tab-bar/tab-bar",
+        "text": "tar1"
+      },
+      {
+        "pagePath": "pages/tab-bar2/tab-bar2",
+        "text": "tar2"
+      }
+    ]
+  }
 }

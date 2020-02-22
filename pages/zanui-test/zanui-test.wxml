@@ -1,0 +1,27 @@
+<!--pages/zanui-test/zanui-test.wxml-->
+<import src="../../zanui/dist/field/index.wxml" />
+<import src="../../zanui/dist/switch/index.wxml" />
+
+
+<view class="zan-btn">按钮</view>
+<template is="zan-field" data="{{ ...name }}"></template>
+<template is="zan-field" data="{{ ...mobile }}"></template>
+<view class="zan-cell zan-cell--switch">
+  <view class="zan-cell__bd">设为默认地址</view>
+  <view class="zan-cell__ft">
+    <template is="zan-switch" data="{{ checked }}" />
+  </view>
+</view>
+
+<view class="icon zan-icon-location" style="color: #ff4343;">地址</view>
+
+<button class="zan-btn zan-btn--primary vertical">确认付款</button>
+<button class="zan-btn zan-btn--danger vertical">确认付款</button>
+<button class="zan-btn zan-btn--warn vertical">确认付款</button>
+
+<view class="zan-panel">
+  <view wx:for="{{ icons }}" wx:for-item="icon" wx:key="item" class="icon-wrap">
+    <view class="icon zan-icon-{{ icon }}" style="color: #999;"></view>
+    <view class="icon-classname">zan-icon-{{ icon }}</view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+/* pages/zanui-test/zanui-test.wxss */
+
+.icon-wrap {
+  width: 33.33333%;
+  height: 120px;
+  float: left;
+  text-align: center;
+}
+.icon-classname {
+  color: #999;
+  font-size: 12px;
+}
+.icon {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.vertical{
+  
+}
