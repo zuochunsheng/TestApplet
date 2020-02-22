@@ -10,11 +10,8 @@
   color: #999;
   font-size: 12px;
 }
-.icon {
+.icon-size {
   font-size: 24px;
   margin: 20px;
 }
 
-.vertical{
-  
-}

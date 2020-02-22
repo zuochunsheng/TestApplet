@@ -1,9 +1,20 @@
 <!--pages/zanui-test/zanui-test.wxml-->
+<!-- 引入组件模版 -->
 <import src="../../zanui/dist/field/index.wxml" />
 <import src="../../zanui/dist/switch/index.wxml" />
+<import src="../../zanui/dist/loadmore/index.wxml" />
+
+<import src="../../zanui/dist/capsule/index.wxml" />
+<import src="../../zanui/dist/stepper/index.wxml" />
+
+<import src="../../zanui/dist/toast/index.wxml" />
 
 
 <view class="zan-btn">按钮</view>
+<view class="zan-btn zan-btn--primary">确认付款</view>
+<view class="zan-btn zan-btn--danger">确认付款</view>
+<view class="zan-btn zan-btn--warn">确认付款</view>
+
 <template is="zan-field" data="{{ ...name }}"></template>
 <template is="zan-field" data="{{ ...mobile }}"></template>
 <view class="zan-cell zan-cell--switch">
@@ -13,15 +24,26 @@
   </view>
 </view>
 
-<view class="icon zan-icon-location" style="color: #ff4343;">地址</view>
+<view class="zan-icon zan-icon-location icon-size" style="color: #ff4343;">地址</view>
 
-<button class="zan-btn zan-btn--primary vertical">确认付款</button>
-<button class="zan-btn zan-btn--danger vertical">确认付款</button>
-<button class="zan-btn zan-btn--warn vertical">确认付款</button>
 
 <view class="zan-panel">
   <view wx:for="{{ icons }}" wx:for-item="icon" wx:key="item" class="icon-wrap">
-    <view class="icon zan-icon-{{ icon }}" style="color: #999;"></view>
+    <view class="zan-icon zan-icon-{{ icon }} icon-size" style="color: #999;"></view>
     <view class="icon-classname">zan-icon-{{ icon }}</view>
   </view>
 </view>
+
+<!-- 加载中 -->
+<template is="zan-loadmore" data="{{loading: true}}" />
+<!-- 一条数据都没有 -->
+<template is="zan-loadmore" data="{{nodata: true}}" />
+<!-- 没有更多数据了 -->
+<template is="zan-loadmore" data="{{nomore: true}}" />
+
+<template is="zan-capsule" data="{{ ...capsuleData }}" />
+<template is="zan-stepper" data="{{ ...stepperData }}" />
+
+
+<view bindtap="showToast">显示toast</view>
+<template is="zan-toast" data="{{ zanToast }}"></template>

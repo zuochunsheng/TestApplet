@@ -6,13 +6,11 @@
 
 
 
-const {
-  Field,
-  Switch,
-  extend
-} = require('../../zanui/dist/index');
+const { Field,Switch,extend } = require('../../zanui/dist/index');
+var Taost = require("../../zanui/dist/toast/index")
 
-Page(extend({}, Field, Switch, {
+Page(extend({}, Field, Switch, Taost,
+ {
   data: {
     name: {
       componentId: 'name',
@@ -120,7 +118,73 @@ Page(extend({}, Field, Switch, {
       'new',
       'new-arrival',
       'hot-sale'
-    ]
+    ],
+    capsuleData:{
+      type:"danger",
+      color:"#38f" ,
+      leftText:"1折扣" ,
+      rightText:"限购一份"
+    },
+
+    steps: [
+      {
+        // 此步骤是否当前完成状态
+        current: false,
+        // 此步骤是否已经完成
+        done: true,
+        // 此步骤显示文案
+        text: '步骤一',
+        // 此步骤描述语
+        desc: '10.01'
+      },
+      {
+        done: true,
+        current: false,
+        text: '步骤二',
+        desc: '10.02'
+      },
+      {
+        done: true,
+        current: true,
+        text: '步骤三',
+        desc: '10.03'
+      }
+    ],
+    stepperData:{
+      type:"horizon",//vertical
+      hasDesc:true,
+      stepper:2,
+      min:1,
+      max:10,
+      
+      
+    }
+   
+  },
+   _handleZanStepperMinus(){
+      var that = this;
+      this.setData({
+        stepperData: {
+       
+          stepper: that.data.stepperData.stepper,
+        
+        }
+      })
+   },
+   _handleZanStepperPlus (){
+     var that = this;
+     this.setData({
+       stepperData: {
+
+         stepper: ++that.data.stepperData.stepper,
+
+       }
+     })
+   },
+   
+  onLoad: function () {
+    //his.data.stepperData.steps = this.data.steps;
+
   },
   handleZanFieldChange(e) {
     if (e.componentId == 'name') {
@@ -144,7 +208,9 @@ Page(extend({}, Field, Switch, {
       checked: e.checked
     });
   },
-
+   showToast() {
+     this.showZanToast('toast的内容');
+   }
 
   
 }))
